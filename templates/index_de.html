@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base_de.html' %}
 
 {% block content %}
 
@@ -43,8 +43,8 @@
 
 <section class="menu__section">
     <div class="menu__btn">
-        <p class="menu__title animated-up">Dai un'occhiata al nostro menù:</p>
-        <a class="menu__animate" href="/menu">Menu <i class="fa-solid fa-utensils" style="margin-left: .75em;"></i></a>
+        <p class="menu__title animated-up">Schau dir die Speisekarte:</p>
+        <a class="menu__animate" href="/menu_de">Speisekarte <i class="fa-solid fa-utensils" style="margin-left: .75em;"></i></a>
         <p class="menu__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptate aperiam velit. Vero, iure temporibus deserunt, doloribus quos, dignissimos magni debitis eligendi molestiae error nulla reiciendis expedita omnis ex nobis.</p>
     </div>
     <div class="menu__images animated-right">
@@ -61,7 +61,7 @@
 </div>
 
 <section class="restaurant">
-    <p class="animated-up">Il ristorante:</p>
+    <p class="animated-up">Das Restaurant:</p>
     <div class="hero-slideshow-manual">
         <div class="slideshow__manual animated-left">
             <img src="/static/images/indoor1.jpg" alt="Restaurant">
@@ -92,21 +92,21 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="nocookie__text" style="margin-bottom: 4em;">
-            <p style="color: #cd4848; font-weight: bold; font-size: inherit;">Errore nel caricamento del widget Google Maps</p>
+            <p style="color: #cd4848; font-weight: bold; font-size: inherit;">Fehler beim Laden des Google Maps-Widgets</p>
         </div>
         <p><em>Via Anelli, 40A - Desenzano del Garda (BS)</em></p>
     </div>
     <div class="opening animated-fade">
-        <p class="table__title">I nostri orari</p>
+        <p class="table__title">Unsere zeitpläne</p>
         <div class="timetables">
             <div class="lunch">
-                <p class="service__title">Pranzo</p>
-                <p>Aperti <strong>TUTTI I GIORNI</strong></p>
+                <p class="service__title">Mittagessen</p>
+                <p><strong>JEDEN TAG geöffnet</strong></p>
                 <p><strong>11.30 - 15.30</strong></p>
             </div>
             <div class="dinner">
-                <p class="service__title">Cena</p>
-                <p>Aperti <strong>TUTTI I GIORNI</strong></p>
+                <p class="service__title">Abendessen</p>
+                <p><strong>JEDEN TAG geöffnet</strong></p>
                 <p><strong>18.00 - 23.30</strong></p>
             </div>
         </div>
@@ -125,7 +125,7 @@
     </div>
     <div class="phone-mail">
         <div class="phone">
-            <p class="phone__title">Telefono:</p>
+            <p class="phone__title">Telefon:</p>
             <a href="tel:030 4196425" class="phone">030 4196425</a>
             <a href="tel:+39 351 9560584" class="phone">+39 351 9560584</a>
         </div>
@@ -135,7 +135,7 @@
         </div>
     </div>
     <div class="social">
-        <p class="social__title">Seguici sui social</p>
+        <p class="social__title">Folgen Sie uns in den sozialen Netzwerken</p>
         <a href="https://www.instagram.com/ristorante_al_teatro/" target="_blank"><i class="fa-brands fa-instagram" style="color: #cd486b;"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100095323475530" target="_blank"><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>
     </div>
@@ -143,24 +143,24 @@
 
 <section class="cookie-banner">
     <div class="cookie__text">
-        <h3 style="text-transform: uppercase; margin-bottom: 1em;">Utilizzo dei cookies</h3>
-        <p>Questo sito utilizza cookie tecnici e servizi di terze parti (per le sue funzionalità) che utilizzano cookies. Il rifiuto del consenso può rendere non disponibili le relative funzioni.
+        <h3 style="text-transform: uppercase; margin-bottom: 1em;">Verwendung von Cookies</h3>
+        <p>Diese Website verwendet technische Cookies und Dienste Dritter (für ihre Funktionalität), die Cookies verwenden. Die Verweigerung der Einwilligung kann dazu führen, dass die entsprechenden Funktionen nicht verfügbar sind.
 
-            Puoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento.
+            Sie können Ihre Einwilligung jederzeit frei erteilen, verweigern oder widerrufen.
             
-            Usa il pulsante “Accetta” per acconsentire. Usa il pulsante “Rifiuta” per continuare senza accettare.</p>
+            Benutzen Sie die Schaltfläche „Zustimmen“, um zuzustimmen. Über die Schaltfläche „Ablehnung“ können Sie ohne Annahme fortfahren.</p>
     </div>
     <div class="cookie__links mt">
-        <a href="#" class="cookie__link">Informativa sui cookies</a>
+        <a href="#" class="cookie__link">Cookie-Richtlinie</a>
     </div>
     <div class="cookie__button">
-        <button class="cookie__btn" id="accept">Accetto</button>
-        <button class="cookie__btn mt" id="refuse" style="background-color: rgba(86, 86, 86, 0.378); color:white; font-weight: 400;">Rifiuto</button>
+        <button class="cookie__btn" id="accept">Zustimmen</button>
+        <button class="cookie__btn mt" id="refuse" style="background-color: rgba(86, 86, 86, 0.378); color:white; font-weight: 400;">Ablehnung</button>
     </div>
 </section>
 
-<section class="cookie-preferences" id="pref">
-    <p>Preferenze Cookie</p>
+<section class="cookie-preferences" style="width: 145px;" id="pref">
+    <p>Cookie-Einstellungen</p>
 </section>
 
 <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
