@@ -1825,6 +1825,28 @@
     </div>
 </section>
 
+<section class="cookie-banner">
+    <div class="cookie__text">
+        <h3 style="text-transform: uppercase; margin-bottom: 1em;">Utilizzo dei cookies</h3>
+        <p>Questo sito utilizza cookie tecnici e servizi di terze parti (per le sue funzionalità) che utilizzano cookies. Il rifiuto del consenso può rendere non disponibili le relative funzioni.
+
+            Puoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento.
+            
+            Usa il pulsante “Accetta” per acconsentire. Usa il pulsante “Rifiuta” per continuare senza accettare.</p>
+    </div>
+    <div class="cookie__links mt">
+        <a href="/cookies" class="cookie__link">Informativa sui cookies</a>
+    </div>
+    <div class="cookie__button">
+        <button class="cookie__btn" id="accept">Accetto</button>
+        <button class="cookie__btn mt" id="refuse" style="background-color: rgba(86, 86, 86, 0.378); color:white; font-weight: 400;">Rifiuto</button>
+    </div>
+</section>
+
+<section class="cookie-preferences" id="pref">
+    <p>Preferenze Cookie</p>
+</section>
+
 <script src="{{ url_for('static', filename='scripts/menu.js') }}"></script>
 
 {% endblock %}

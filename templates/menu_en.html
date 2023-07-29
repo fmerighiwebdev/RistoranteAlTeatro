@@ -1825,6 +1825,28 @@
     </div>
 </section>
 
+<section class="cookie-banner">
+    <div class="cookie__text">
+        <h3 style="text-transform: uppercase; margin-bottom: 1em;">Use of Cookies</h3>
+        <p>This site uses technical cookies and third-party services (for its functionality) that use cookies. Refusal of consent may make the relative functions unavailable.
+
+            You can freely give, refuse or revoke your consent at any time.
+            
+            Use the "Accept" button to agree. Use the "Reject" button to continue without accepting.</p>
+    </div>
+    <div class="cookie__links mt">
+        <a href="/cookies_en" class="cookie__link">Cookie policy</a>
+    </div>
+    <div class="cookie__button">
+        <button class="cookie__btn" id="accept">Accept</button>
+        <button class="cookie__btn mt" id="refuse" style="background-color: rgba(86, 86, 86, 0.378); color:white; font-weight: 400;">Refuse</button>
+    </div>
+</section>
+
+<section class="cookie-preferences" style="width: 135px;" id="pref">
+    <p>Cookie Preferences</p>
+</section>
+
 <script src="{{ url_for('static', filename='scripts/menu.js') }}"></script>
 
 {% endblock %}
