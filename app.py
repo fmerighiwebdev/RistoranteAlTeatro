@@ -29,6 +29,18 @@ def menu_en():
 def menu_de():
     return render_template("menu_de.html")
 
+@app.route('/cookies')
+def cookies():
+    return render_template("cookies.html")
+
+@app.route('/cookies_en')
+def cookies_en():
+    return render_template("cookies_en.html")
+
+@app.route('/cookies_de')
+def cookies_de():
+    return render_template("cookies_de.html")
+
 # Start
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)

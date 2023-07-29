@@ -106,7 +106,7 @@ window.onscroll = () => {
 let banner = document.querySelector('.cookie-banner');
 let accept = document.querySelector('#accept');
 let refuse = document.querySelector('#refuse');
-let pref = document.querySelector('#pref'); 
+let pref = document.querySelector('#pref');
 
 let map = document.querySelector('.location iframe');
 let errorMap = document.querySelector('.location .nocookie__text');
@@ -145,6 +145,8 @@ accept.addEventListener('click', () => {
   pref.style.display = "block";
 
   document.cookie = "rejected=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+
 })
 
 refuse.addEventListener('click', () => {

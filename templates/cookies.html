@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="info-title">
+        <h1 class="cookie__title">Informativa sui cookies</h1>
+    </section>
+
+    <section class="info-section">
+        <h2 class="cookie__subtitle">Che cosa sono i cookies?</h2>
+        <p class="cookie__desc">Un “cookie” è un piccolo file di testo che i siti Web/Applicazioni inviano al computer o a un altro dispositivo 
+            connesso a Internet del visitatore per identificare univocamente il browser del visitatore stesso, 
+            per salvare informazioni, impostazioni e personalizzazioni nel browser.</p>
+    </section>
+
+    <section class="info-section">
+        <h2 class="cookie__subtitle">Cookie per cui è richiesto il consenso</h2>
+        <p class="cookie__desc">Tutti i cookie diversi da quelli tecnici vengono installati o attivati solo a seguito del 
+            <strong>consenso espresso</strong> dall’utente la prima volta che visita il sito. Il consenso può essere espresso in maniera 
+            generale, interagendo con il banner di informativa breve presente sulla pagina di approdo del sito, secondo le 
+            modalità indicate in esso (cliccando sul tasto ACCETTA); oppure può essere fornito in 
+            maniera selettiva, secondo le modalità di seguito indicate. Di questo consenso viene tenuta traccia in occasione 
+            delle visite successive. <strong> <br> L’utente ha sempre la possibilità di revocare in tutto o in parte il consenso già espresso.</strong></p>
+    </section>
+
+    <section class="info-section">
+        <h2 class="cookie__subtitle">Cookie utilizzati da questo sito</h2>
+        <p class="cookie__desc"><strong>Cookies tecnici</strong> <br>
+            Utilizziamo solamente cookies tecnici anonimi indispensabili per il corretto funzionamento del sito, per la gestione della sessione, per le funzionalità interne del nostro sistema o per la personalizzazione di alcune parti del sito.
+            Questo tipo di cookie non richiede il consenso dell'utente in quanto non raccoglie dati sensibili.</p>
+        <p class="cookie__desc"><strong>Cookies di profilazione generati dal sito</strong> <br>
+            Questo sito non crea cookies di profilazione.</p>
+        <p class="cookie__desc"><strong>Cookies di terze parti</strong> <br>
+            I cookies di terze parti sono impostati da un sito web diverso da questo sito e risiedono su server diversi. Questi cookie non vengono controllati direttamente da questo Sito.
+            Di seguito i servizi (di terze parti) che possono generare cookies:</p>
+        <table class="cookie__table mt">
+            <tbody>
+                <tr>
+                    <td>GOOGLE MAPS</td>
+                    <td>Google Maps è un servizio di visualizzazione di mappe gestito da Google Inc. che permette a questo 
+                        sito di indicare il luogo dove si trova l'azienda. <br>
+                        <a href="https://policies.google.com/privacy?hl=it&gl=it">Privacy Policy - Cookie</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GOOGLE FONTS</td>
+                    <td>Google Fonts è un servizio che permette di caricare dei caratteri (font) per migliorare l'aspetto del 
+                        sito attraverso l'uso dei fogli di stile. Il servizio è gestito da Google Inc. L'uso delle Google Font 
+                        non prevede autenticazione. <br>
+                        <a href="https://policies.google.com/privacy?hl=it&gl=it">Privacy Policy - Cookie</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>FONT AWESOME</td>
+                    <td>Font Awesome è un servizio che permette di caricare delle icone per migliorare l'aspetto del sito.
+                        Il servizio è gestito da Fonticons Inc. L'utilizzo viene eseguito tramite CDN (Content Delivery Network) <br>
+                        <a href="https://fontawesome.com/privacy">Privacy Policy - Cookie</a>
+                    </td>  
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="info-section">
+        <h2 class="cookie__subtitle">Gestione dei cookie</h2>
+        <p class="cookie__desc">I cookies possono essere eliminati, modificati e disattivati direttamente dal browser. <br>
+            Il visitatore ha il pieno controllo dei cookies e sul loro utilizzo. <br>
+            Disabilitando i cookies è possibile che alcune parti/servizi di questo sito non siano correttamente visualizzati. <br>
+        </p>
+        <p class="cookie__desc">Qui di seguito le guide dei browser più usati per conoscere le varie modalità di gestione dei cookies:</p>
+        <ul class="cookie__list">
+            <li><a href="https://support.google.com/chrome/answer/95647?hl=it">Chrome</a></li>
+            <li><a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie?redirectlocale=it-US&redirectslug=Cookies">Firefox</a></li>
+            <li><a href="https://support.apple.com/it-it/HT201265">Safari</a></li>
+            <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Microsoft Edge</a></li>
+        </ul>
+        <p class="cookie__desc"><strong>Ricordiamo inoltre all’utente che molti browser permettono la navigazione in incognito.</strong></p>
+        <p class="cookie__desc">Ulteriori informazioni sui cookies possono essere reperite nei seguenti siti:</p>
+        <ul class="cookie__list">
+            <li><a href="https://it.wikipedia.org/wiki/Cookie">Cookie (Wikipedia)</a></li>
+            <li><a href="https://allaboutcookies.org/">All About Cookies</a></li>
+            <li><a href="https://youronlinechoices.eu/">Your Online Choices</a></li>
+        </ul>
+    </section>
+
+    <section class="info-section">
+        <h2 class="cookie__subtitle">Aggiornamento informativa</h2>
+        <p class="cookie__desc">La presente cookie policy può subire modifiche nel tempo – anche connesse all'eventuale entrata 
+            in vigore di nuove normative di settore, all'aggiornamento o erogazione di nuovi servizi ovvero ad intervenute 
+            innovazioni tecnologiche – per cui l'utente/visitatore è invitato a consultare periodicamente questa pagina.</p>
+    </section>
+
+    <section class="info-section">
+        <p class="cookie__desc"><strong>Il tuo stato attuale:</strong></p>
+        <p id="state"></p>
+    </section>
+
+    <section class="contacts animated-fade" id="contacts">
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Logo">
+        </div>
+        <div class="phone-mail">
+            <div class="phone">
+                <p class="phone__title">Telefono:</p>
+                <a href="tel:030 4196425" class="phone">030 4196425</a>
+                <a href="tel:+39 351 9560584" class="phone">+39 351 9560584</a>
+            </div>
+            <div class="mail">
+                <p class="mail__title">Email:</p>
+                <a href="mailto:alteatrodesenzano@gmail.com" class="mail__link">alteatrodesenzano@gmail.com</a>
+            </div>
+        </div>
+        <div class="social">
+            <p class="social__title">Seguici sui social</p>
+            <a href="https://www.instagram.com/ristorante_al_teatro/" target="_blank"><i class="fa-brands fa-instagram" style="color: #cd486b;"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100095323475530" target="_blank"><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>
+        </div>
+    </section>
+
+    <script src="/static/scripts/cookies.js"></script>
+{% endblock %}
