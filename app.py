@@ -1,5 +1,5 @@
 # Import
-from flask import Flask, render_template
+from flask import Flask, render_template, request, send_from_directory
 
 # Create app
 app = Flask(__name__)
@@ -40,6 +40,10 @@ def cookies_en():
 @app.route('/cookies_de')
 def cookies_de():
     return render_template("cookies_de.html")
+
+@app.route('/robots.txt')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 # Start
 if __name__ == '__main__':

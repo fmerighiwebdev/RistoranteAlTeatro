@@ -38,7 +38,7 @@ img {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     padding: 1em 5em;
     height: 77.450px;
 }
@@ -105,6 +105,22 @@ img {
     background-color: black;
 }
 
+.hero-title {
+    font-size: clamp(3.5rem, 2.618rem + 3.617vw, 6rem);
+    width: 100%;
+    white-space: nowrap;
+    font-family: var(--ff-heading);
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.125rem, 0.905rem + 0.904vw, 1.75rem);
+    font-family: var(--ff-heading);
+    white-space: nowrap;
+    text-align: center;
+}
+
 /* Slideshow */
 .slideshow {
     position: relative;
@@ -116,7 +132,9 @@ img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInSlideshow 1s ease-in-out;
 }
+
 
 /* Description */
 .description {
@@ -126,7 +144,7 @@ img {
     & p {
         font-family: var(--ff-heading);
         letter-spacing: 2px;
-        font-size: clamp(0.75rem, 3vw, 1rem);
+        font-size: clamp(0.85rem, 3vw, 1.1rem);
     }
 }
 
@@ -153,6 +171,10 @@ img {
     width: 30%;
 }
 
+.desc__text p {
+    text-align: justify;
+}
+
 /* Menu - Home */
 .menu__section {
     text-align: center;
@@ -172,20 +194,32 @@ img {
     background-color: var(--accent-clr);
     transition: all .3s;
     cursor: pointer;
+    border: none;
     font-size: clamp(1rem, 3vw, 1.25rem);
 }
 
 .menu__animate:hover {
     background-color: var(--accent-clr-dark);
     color: white;
+    transform: scale(1.1);
 }
 
 .menu__title {
     color: var(--secondary-clr);
     font-family: var(--ff-heading);
     letter-spacing: 2px;
-    margin-bottom: 1.75em;
+    margin-bottom: 1.25em;
     font-size: clamp(1.875rem, 3vw, 2.25rem);
+    text-align: start;
+}
+
+.desc__title {
+    color: var(--secondary-clr);
+    font-family: var(--ff-heading);
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--accent-clr);
+    margin-bottom: 1em;
+    font-size: clamp(1.875rem, 3vw, 2.25rem) !important;
     text-align: start;
 }
 
@@ -206,11 +240,17 @@ img {
 
 .menu__text {
     color: black;
-    font-size: clamp(0.75rem, 3vw, 1rem);
+    font-size: clamp(0.85rem, 3vw, 1.1rem);
     font-family: var(--ff-heading);
-    margin-top: 3.75em;
-    text-align: start;
+    margin-top: 2.75em;
+    text-align: justify;
     letter-spacing: 2px;
+}
+
+.menu__text span {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid black;
 }
 
 /* Restaurant */
@@ -297,6 +337,7 @@ img {
 }
 
 .location iframe {
+    border: none;
     border-radius: 10px;
     width: 100%;
 }
@@ -391,15 +432,15 @@ img {
     gap: 2em;
 
     & .privacy {
-        text-decoration: none;
-        color: var(--secondary-clr);
-        font-family: var(--ff-heading);
-        font-size: .875rem;
+        text-decoration: none !important;
+        color: #000000 !important;
+        font-family: var(--ff-heading) !important;
+        font-size: .875rem !important;
     }
 }
 
 .owner p {
-    color: var(--secondary-clr);
+    color: #000000;
     font-size: .875rem;
     font-family: var(--ff-heading);
 }
@@ -407,6 +448,30 @@ img {
 /* Menu */
 .hero-mobile {
     display: none;
+}
+
+.cta-btn {
+    width: min(1000px, 90%);
+    margin: 5em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta_menu {
+    text-decoration: none;
+    font-family: var(--ff-heading);
+    padding: .75em 1em;
+    border-radius: 10px;
+    color: var(--secondary-clr);
+    text-align: center;
+    background-color: var(--accent-clr);
+    width: 180px;
+    transition: all .3s;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.cta_menu:hover {
+    transform: scale(1.1);
 }
 
 .plates__photos {
@@ -470,6 +535,7 @@ img {
     font-family: var(--ff-heading);
     color: var(--secondary-clr);
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .card__title {
@@ -758,6 +824,15 @@ td a {
     }
 }
 
+@keyframes fadeInSlideshow {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeInFromLeft {
     from {
         transform: translateX(-100%);
@@ -972,6 +1047,7 @@ td a {
         height: 20em;
         width: 100%;
         object-fit: cover;
+        animation: fadeInSlideshow 1s ease-in-out;
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     }
 
@@ -1096,6 +1172,7 @@ td a {
         height: 20em;
         object-fit: cover;
         width: 100%;
+        animation: fadeInSlideshow 1s ease-in-out;
     }
 
     .menu-container {
@@ -1165,5 +1242,21 @@ td a {
 
     .info-section, .info-title {
         padding-inline: 2em;
+    }
+
+    .tilt-down {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cta-btn {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .cta_menu {
+        width: 180px;
     }
 }

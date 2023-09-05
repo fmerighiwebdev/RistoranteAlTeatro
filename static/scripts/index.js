@@ -145,8 +145,6 @@ accept.addEventListener('click', () => {
   pref.style.display = "block";
 
   document.cookie = "rejected=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-
-
 })
 
 refuse.addEventListener('click', () => {
@@ -158,7 +156,7 @@ refuse.addEventListener('click', () => {
 
   pref.style.display = "block";
 
-  document.cookie = "accepted=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "accepted=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";  
 })
 
 pref.addEventListener('click', () => {
