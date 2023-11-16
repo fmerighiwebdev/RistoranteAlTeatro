@@ -45,6 +45,10 @@ def cookies_de():
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory(app.static_folder, 'sitemap.xml')
+
 # Start
 if __name__ == '__main__':
     app.run(debug=True)
