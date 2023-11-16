@@ -41,6 +41,7 @@ img {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     padding: 1em 5em;
     height: 77.450px;
+    animation: fadeIn .5s ease-in-out forwards;
 }
 
 .logo-brand {
@@ -189,7 +190,7 @@ img {
     font-family: var(--ff-heading);
     padding: .75em 2em;
     border-radius: 10px;
-    color: var(--secondary-clr);
+    color: black;
     text-align: center;
     background-color: var(--accent-clr);
     transition: all .3s;

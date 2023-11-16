@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.ristorantealteatro.it/</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/menu</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/en</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/de</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/cookies</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/menu_en</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/cookies_en</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/menu_de</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ristorantealteatro.it/cookies_de</loc>
+  <lastmod>2023-11-16T23:19:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

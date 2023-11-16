@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, send_from_directory
 
 # Create app
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 # Routes
 @app.route('/')
@@ -47,4 +47,4 @@ def static_from_root():
 
 # Start
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True)
+    app.run(debug=True)
