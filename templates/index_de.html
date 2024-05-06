@@ -3,32 +3,53 @@
 {% block content %}
 
 <section class="description">
-    <div class="hero__image">
-        <img src="/static/images/logo.png" alt="Hero">
+    <div class="text-center mb-5">
+        <img class="d-block mx-auto" src="/static/images/logo.png" alt="Hero Image">
         <h1 class="hero-title">AL TEATRO</h1>
-        <h2 class="hero-subtitle">Ristorante - Bar - Pizzeria Forno a Legna</h2>
+        <div class="col-lg-6 mx-auto">
+          <h2 class="hero-subtitle">Ristorante - Pizzeria Forno a Legna - Bar</h2>
+        </div>
     </div>
-    <div class="desc__content">
-        <div class="desc__image">
-            <div class="slideshow">
-                <div class="image__container">
-                    <img src="/static/images/indoor2.jpg" alt="Indoor">        
+    <div class="row align-items-center pt-4 desc-content">
+        <div class="col-12 col-lg-6">
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade shadow-lg" style="z-index: 0;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/images/indoor2.jpg" class="d-block w-100" alt="Restaurant Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/indoor3.jpg" class="d-block w-100" alt="Restaurant Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/indoor4.jpg" class="d-block w-100" alt="Restaurant Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/outdoor2.jpg" class="d-block w-100" alt="Restaurant Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/bar2.jpg" class="d-block w-100" alt="Restaurant Image">
+                    </div>
                 </div>
-                <div class="image__container">
-                    <img src="/static/images/indoor3.jpg" alt="Indoor">        
-                </div>
-                <div class="image__container">
-                    <img src="/static/images/indoor4.jpg" alt="Indoor">        
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-        <div class="desc__text">
-            <p class="desc__title animated-up">Willkommen</p>
-            <p>Das <strong>Restaurant Pizzeria Al Teatro</strong> empfängt Sie in seinen einladenden Räumen, damit Sie die Spezialitäten probieren können
-                seiner Küche! <br>
-                Es liegt nur einen kurzen Spaziergang vom Stadtzentrum entfernt und verfügt über Innenräume und einen angenehmen Außenbereich. <br>
-                Die Umgebung ist gepflegt und komfortabel, ideal für die Organisation von Firmenfeiern und zum Feiern, zusammen mit Freunden und Verwandten, wichtig
-                Zeremonien und Jubiläen.</p>
+        <div class="col-12 col-lg-6">
+            <h3 class="sec-title">Willkommen</h3>
+            <p class="desc-text">Das <strong>Ristorante Pizzeria Al Teatro</strong> heißt Sie in seinen einladenden Räumlichkeiten herzlich willkommen und lässt Sie in die Atmosphäre eintauchen
+                ein einzigartiges kulinarisches Erlebnis! Es liegt nicht weit vom belebten Stadtzentrum entfernt und bietet nicht nur einladende Innenräume, sondern auch ...
+                auch ein schöner Außenbereich. <br><br>
+
+                Die Atmosphäre ist sorgfältig zusammengestellt und schafft eine komfortable Umgebung, die sich perfekt für die Organisation von Firmenmeetings usw. eignet
+                bis hin zur gemeinsamen Feier wichtiger Ereignisse und Jubiläen mit Freunden und Verwandten. Mit seiner Küche, die einzigartige Spezialitäten bietet,
+                Unser Restaurant ist bestrebt, den Gaumen seiner Gäste zu verwöhnen und ihnen ein unvergessliches gastronomisches Erlebnis zu bieten.
+            </p>
         </div>
     </div>
 </section>
@@ -41,46 +62,54 @@
     </svg>
 </div>
 
-<section class="menu__section">
-    <div class="menu__btn">
-        <p class="menu__title animated-up">Schau dir die Speisekarte:</p>
-        <a class="menu__animate" href="/menu_de">Speisekarte <i class="fa-solid fa-utensils" style="margin-left: .75em;"></i></a>
-        <p class="menu__text">Wir bieten Ihnen eine große Auswahl an Menüs, jedes mit seiner eigenen wertvollen Besonderheit.<br>
-            Von der <span>italienischen</span> Küche, über die <span>indische</span> Küche bis hin zur Pizza, unsere Gerichte
-            werden mit Liebe und Leidenschaft zubereitet. <br>
-            Die Zutaten sind immer frisch und authentisch. <br>
-            Wir sind davon überzeugt, dass wir Ihre Erwartungen bestmöglich erfüllen können!</p>
-    </div>
-    <div class="menu__images animated-right">
-        <img src="/static/images/menu.jpg" alt="Menu">
-    </div>
-</section>
+<section class="menu">
+    <div class="row align-items-center desc-content">
+        <div class="col-12 col-lg-6">
+            <h3 class="sec-title">Werfen Sie einen Blick auf unsere Speisekarte:</h3>
+            <a class="menu-btn" href="/menu">Speisekarte <i class="fa-solid fa-utensils" style="margin-left: .75em;"></i></a>
+            <p class="menu-text">Wir freuen uns, Ihnen eine große und raffinierte Auswahl an Menüs präsentieren zu können, jedes mit seinen eigenen wertvollen und einzigartigen Eigenschaften.
+                Von raffinierter italienischer Küche über exotische indische Küche bis hin zu traditioneller Pizza ist jedes Gericht, das wir anbieten, das Ergebnis von Hingabe, Liebe und
+                kulinarische Leidenschaft. <br><br>
 
-<div class="split-down">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <rect x="1200" height="3.6"></rect>
-        <rect height="3.6"></rect>
-        <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
-    </svg>
-</div>
-
-<section class="restaurant">
-    <p class="animated-up">Das Restaurant:</p>
-    <div class="hero-slideshow-manual">
-        <div class="slideshow__manual animated-left">
-            <img src="/static/images/indoor1.jpg" alt="Restaurant">
+                Unsere Köche arbeiten mit Sorgfalt und Aufmerksamkeit, um sicherzustellen, dass jeder Gang ein authentisches gastronomisches Erlebnis ist. Wir verwenden nur Zutaten
+                frisch und unverfälscht, weil wir glauben, dass sich die Qualität der Zutaten im endgültigen Geschmack unserer Gerichte widerspiegelt. <br><br>
+               
+                Wir sind fest davon überzeugt, dass wir alle Ihre Erwartungen übertreffen können und eine kulinarische Reise bieten, die auch Ihre anspruchsvollsten Geschmäcker befriedigt.
+                Unsere Mission ist es, ein unvergessliches kulinarisches Erlebnis zu schaffen, bei dem Vielfalt und Qualität zusammenkommen, um Sie zu begeistern
+                Gaumen bei jedem Bissen.</p>
         </div>
-        <div class="next">
-            <button class="next__btn" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="col-12 col-lg-6">
+            <div id="carouselMenuAutoplaying" class="carousel slide carousel-fade shadow-lg" style="z-index: 0;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/images/menu.jpg" class="d-block w-100" alt="Restaurant Image" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/piatti1.jpg" class="d-block w-100" alt="Restaurant Image" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/piatti2.jpg" class="d-block w-100" alt="Restaurant Image" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/piatti3.jpg" class="d-block w-100" alt="Restaurant Image" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/piatti4.jpg" class="d-block w-100" alt="Restaurant Image" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/images/piatti5.jpg" class="d-block w-100" alt="Restaurant Image" loading="lazy">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenuAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMenuAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="restaurant__photos animated-left">
-        <img src="/static/images/indoor1.jpg" alt="Restaurant photo">
-        <img src="/static/images/indoor2.jpg" alt="Restaurant photo">
-        <img src="/static/images/indoor3.jpg" alt="Restaurant photo">
-        <img src="/static/images/indoor4.jpg" alt="Restaurant photo">
-        <img src="/static/images/outdoor2.jpg" alt="Restaurant photo">
-        <img src="/static/images/bar2.jpg" alt="Restaurant photo">
     </div>
 </section>
 
@@ -91,27 +120,27 @@
 </div>
 
 <section class="where-when">
-    <div class="location animated-left">
-        <iframe title="Google Maps" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.066447014368!2d10.540888176028188!3d45.46846537107414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781945b6092db91%3A0x11159a6aae5fae7b!2sRistorante%20Bar%20Pizzeria%20Al%20Teatro!5e0!3m2!1sit!2sit!4v1689939009832!5m2!1sit!2sit" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="nocookie__text" style="margin-bottom: 4em;">
-            <p style="color: #cd4848; font-weight: bold; font-size: inherit;">Fehler beim Laden des Google Maps-Widgets</p>
-        </div>
-        <p><em>Via Anelli, 40A - Desenzano del Garda (BS)</em></p>
-    </div>
-    <div class="opening animated-fade">
-        <p class="table__title">Unsere zeitpläne</p>
-        <div class="timetables">
-            <div class="lunch">
-                <p><strong>JEDEN TAG geöffnet</strong></p>
-                <p class="service__title">Zeitplan - Mittagessen</p>
-                <p><strong>12.00 - 15.30</strong></p>
+    <div class="row align-items-start desc-content">
+        <div class="col-12 col-lg-6">
+            <iframe title="Google Maps" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.066447014368!2d10.540888176028188!3d45.46846537107414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781945b6092db91%3A0x11159a6aae5fae7b!2sRistorante%20Bar%20Pizzeria%20Al%20Teatro!5e0!3m2!1sit!2sit!4v1689939009832!5m2!1sit!2sit" 
+            width="600" height="450" style="border:0;" allowfullscreen="" 
+            referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
+            <div class="nocookie-text" style="margin-bottom: 4em;">
+                <p style="color: #cd4848; font-weight: bold; font-size: inherit;">Fehler beim Laden des Google Maps-Widgets</p>
             </div>
-            <div class="dinner">
-                <p><strong>JEDEN TAG geöffnet</strong></p>
-                <p class="service__title">Zeitplan - Abendessen</p>
-                <p><strong>17.30 - 22.30</strong></p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h3 class="sec-title" style="color: white; border-color: white;">Unsere Öffnungszeiten</h3>
+            <div class="timetables">
+                <div class="lunch">
+                    <p><strong>JEDEN TAG</strong> geöffnet</p>
+                    <p class="service-title">Mittagessen</p>
+                </div>
+                <div class="dinner">
+                    <p><strong>JEDEN TAG</strong> geöffnet</p>
+                    <p class="service-title">Abendessen</p>
+                    <p><strong>17.30 - 22.30</strong></p>
+                </div>
             </div>
         </div>
     </div>
@@ -123,25 +152,31 @@
     </svg>
 </div>
 
-<section class="contacts animated-fade" id="contacts">
-    <div class="logo">
-        <img src="/static/images/logo.png" alt="Logo">
-    </div>
-    <div class="phone-mail">
-        <div class="phone">
-            <p class="phone__title">Telefon:</p>
-            <a href="tel:030 4196425" class="phone">030 4196425</a>
-            <a href="tel:+39 351 9560584" class="phone">+39 351 9560584</a>
+<section class="contacts" id="contacts">
+    <div class="row align-items-start">
+        <div class="col-12 col-md-4">
+            <img class="logo-contacts" style="margin: 0 auto;" src="/static/images/logo.png" alt="Logo">
         </div>
-        <div class="mail">
-            <p class="mail__title">Email:</p>
-            <a href="mailto:alteatrodesenzano@gmail.com" class="mail__link">alteatrodesenzano@gmail.com</a>
+        <div class="col-12 col-md-4">
+            <div class="centered-contact">
+                <div class="phone">
+                    <p class="phone-title">Telefon:</p>
+                    <a href="tel:030 4196425" class="phone-link">030 4196425</a>
+                    <a href="tel:+39 351 9560584" class="phone-link">+39 351 9560584</a>
+                </div>
+                <div class="mail">
+                    <p class="mail-title">Email:</p>
+                    <a href="mailto:alteatrodesenzano@gmail.com" class="mail-link">alteatrodesenzano@gmail.com</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="social">
-        <p class="social__title">Folgen Sie uns in den sozialen Netzwerken</p>
-        <a href="https://www.instagram.com/ristorante_al_teatro/" target="_blank"><i class="fa-brands fa-instagram" style="color: #cd486b;"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100095323475530" target="_blank"><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>
+        <div class="col-12 col-md-4">
+            <div class="centered-contact">
+                <Folgen class="social-title mb-2">Folgen Sie uns in den sozialen Medien</p>
+                <a href="https://www.instagram.com/ristorante_al_teatro/" aria-label="Profilo Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: #cd486b;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095323475530" aria-label="Profilo Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -163,10 +198,20 @@
     </div>
 </section>
 
+<div class="whatsapp-pill">
+    <a href="https://wa.me/393519560584" target="_blank" class="whatsapp-link">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
 <section class="cookie-preferences" style="width: 145px;" id="pref">
     <p>Cookie-Einstellungen</p>
 </section>
 
 <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 {% endblock %}

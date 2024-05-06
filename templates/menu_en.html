@@ -2,42 +2,7 @@
 
 {% block content %}
 
-<section class="hero-mobile">
-    <div class="dark__opacity"></div>
-    <div class="hero__menu__image">
-        <div class="slideshow__menu">
-            <div class="hero__image__container">
-                <img src="/static/images/menu.jpg" alt="Menu">        
-            </div>
-            <div class="hero__image__container">
-                <img src="/static/images/piatti2.jpg" alt="Piatti">        
-            </div>
-            <div class="hero__image__container">
-                <img src="/static/images/piatti1.jpg" alt="Piatti">        
-            </div>
-            <div class="hero__image__container">
-                <img src="/static/images/piatti3.jpg" alt="Piatti">        
-            </div>
-            <div class="hero__image__container">
-                <img src="/static/images/piatti5.jpg" alt="Piatti">        
-            </div>
-            <div class="hero__image__container">
-                <img src="/static/images/piatti4.jpg" alt="Piatti">        
-            </div>
-        </div>
-    </div>
-    <h1 class="hero__menu__title">Menu</h1>
-</section>
-
-<section class="hero-desktop">
-    <h1 class="hero__menu__title__desk">Menu</h1>
-    <div class="plates__photos">
-        <img src="/static/images/piatti2.jpg" alt="Piatti">
-        <img src="/static/images/piatti4.jpg" alt="Piatti">
-        <img src="/static/images/piatti5.jpg" alt="Piatti">
-        <img src="/static/images/piatti3.jpg" alt="Piatti">
-    </div>
-</section>
+<h1 class="hero__menu__title__desk">Menu</h1>
 
 <div class="cta-btn">
     <a href="#menu_ita" class="cta_menu">Italian Menu</a>
@@ -45,7 +10,7 @@
     <a href="#pizzeria" class="cta_menu">Pizzeria</a>
 </div>
 
-<section class="menu-container animated-fade">
+<section class="menu-container">
     <div class="menu__card">
         <div class="warning">
             <p><em>*the allergen register is available for consultation (at the bottom)</em></p>
@@ -1849,25 +1814,31 @@
     </div>
 </section>
 
-<section class="contacts animated-fade" id="contacts">
-    <div class="logo">
-        <img src="/static/images/logo.png" alt="Logo">
-    </div>
-    <div class="phone-mail">
-        <div class="phone">
-            <p class="phone__title">Phone:</p>
-            <a href="tel:030 4196425" class="phone">030 4196425</a>
-            <a href="tel:+39 351 9560584" class="phone">+39 351 9560584</a>
+<section class="contacts" id="contacts">
+    <div class="row align-items-start">
+        <div class="col-12 col-md-4">
+            <img class="logo-contacts" style="margin: 0 auto;" src="/static/images/logo.png" alt="Logo">
         </div>
-        <div class="mail">
-            <p class="mail__title">Email:</p>
-            <a href="mailto:alteatrodesenzano@gmail.com" class="mail__link">alteatrodesenzano@gmail.com</a>
+        <div class="col-12 col-md-4">
+            <div class="centered-contact">
+                <div class="phone">
+                    <p class="phone-title">Phone:</p>
+                    <a href="tel:030 4196425" class="phone-link">030 4196425</a>
+                    <a href="tel:+39 351 9560584" class="phone-link">+39 351 9560584</a>
+                </div>
+                <div class="mail">
+                    <p class="mail-title">Email:</p>
+                    <a href="mailto:alteatrodesenzano@gmail.com" class="mail-link">alteatrodesenzano@gmail.com</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="social">
-        <p class="social__title">Follow us on social networks</p>
-        <a href="https://www.instagram.com/ristorante_al_teatro/" target="_blank"><i class="fa-brands fa-instagram" style="color: #cd486b;"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100095323475530" target="_blank"><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>
+        <div class="col-12 col-md-4">
+            <div class="centered-contact">
+                <p class="social-title mb-2">Follow us on social</p>
+                <a href="https://www.instagram.com/ristorante_al_teatro/" aria-label="Profilo Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: #cd486b;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095323475530" aria-label="Profilo Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: #4267b2;"></i></a>
+            </div>
+        </div>
     </div>
 </section>
 
