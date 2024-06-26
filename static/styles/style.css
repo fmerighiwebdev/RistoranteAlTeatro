@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -7,7 +7,8 @@
 }
 
 :root {
-    --ff-heading: 'Diphylleia', serif;
+    --ff-heading: 'Della Respira', serif;
+    --ff-body: 'Raleway', sans-serif;
 
     --primary-clr: hsl(0, 0%, 0%);
     --secondary-clr: hsla(0, 0%, 34%, 0.707);
@@ -48,6 +49,7 @@ img {
     list-style: none;
     display: flex;
     gap: 5em;
+    margin: 0;
 }
 
 .nav__link {
@@ -116,10 +118,28 @@ img {
 }
 
 .desc-text, .menu-text {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     font-size: 1rem;
     margin-top: 2em;
     letter-spacing: 2px;
+}
+
+.ig-embedded {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+}
+.iframe .referral a {
+    display: none !important;
 }
 
 /* Menu - Home */
@@ -133,7 +153,7 @@ img {
 .menu-btn {
     text-decoration: none;
     display: block;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     padding: .75em 2em;
     margin: 0 auto;
     border-radius: 10px;
@@ -195,7 +215,7 @@ iframe {
 
 .lunch p, .dinner p {
     color: white;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     text-align: center;
     font-size: 1rem;
     margin: 0;
@@ -225,7 +245,7 @@ iframe {
     width: fit-content;
     text-decoration: none;
     color: var(--secondary-clr);
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     font-size: 1.875rem;
 }
 
@@ -237,7 +257,7 @@ iframe {
     color: var(--secondary-clr);
     text-decoration: none;
     width: fit-content;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     font-size: 1.25rem;
 }
 
@@ -289,7 +309,7 @@ iframe {
     & .privacy {
         text-decoration: none !important;
         color: #000000 !important;
-        font-family: var(--ff-heading) !important;
+        font-family: var(--ff-body) !important;
         font-size: .875rem !important;
         margin: 0;
     }
@@ -297,7 +317,7 @@ iframe {
 
 .credits {
     color: #000000;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     font-size: .875rem;
     margin: 0;
 }
@@ -311,7 +331,7 @@ iframe {
 .owner p {
     color: #000000;
     font-size: .875rem;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     margin: 0;
 }
 
@@ -325,7 +345,7 @@ iframe {
 
 .cta_menu {
     text-decoration: none;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     padding: .75em 1em;
     border-radius: 10px;
     color: var(--secondary-clr);
@@ -358,7 +378,7 @@ iframe {
 }
 
 .warning p {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     text-align: end;
     margin: 0;
     font-size: clamp(.25rem, 2vw, .75rem);
@@ -377,7 +397,7 @@ iframe {
 }
 
 .advice p {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     color: var(--secondary-clr);
     font-size: 1rem;
     text-transform: uppercase;
@@ -436,14 +456,14 @@ iframe {
 }
 
 .item__name, .price p {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
 }
 
 .item__ing {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     color: var(--secondary-clr);
     font-size: .875rem;
 }
@@ -468,7 +488,7 @@ iframe {
 
 .cookie__text, .cookie__button {
     letter-spacing: 2px;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     font-size: .75rem;
     color: white;
 }
@@ -484,7 +504,7 @@ iframe {
 .cookie__link {
     text-decoration: underline;
     color: white;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     font-size: .75rem;
 }
 
@@ -493,7 +513,7 @@ iframe {
 }
 
 .cookie__btn {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     width: 100%;
     padding: .75em 0;
     font-size: .75rem;
@@ -512,10 +532,10 @@ iframe {
 
 .cookie-preferences {
     padding: .5em 1em;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     background-color: black;
     color: white;
-    width: 130px;
+    width: 140px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -557,7 +577,7 @@ iframe {
 }
 
 .cookie__desc {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     margin-top: 1em;
     font-size: clamp(0.75rem, 3vw, 1rem);
 }
@@ -565,7 +585,7 @@ iframe {
 .cookie__table td {
     padding: .5em .75em;
     border: 1px solid var(--secondary-clr);
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
     border-radius: 10px;
     font-size: clamp(0.75rem, 3vw, 1rem);
 }
@@ -579,7 +599,7 @@ td a {
 .cookie__list {
     margin-top: 1em;
     list-style-position: inside;
-    font-family: var(--ff-heading);
+    font-family: var(--ff-body);
 }
 
 .cookie__list a {
@@ -810,6 +830,12 @@ td a {
 
     .tilt-down {
         display: none;
+    }
+
+    .ig-embedded {
+        padding-inline: 1rem;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 
